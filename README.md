@@ -1,116 +1,63 @@
-# GrandTourXR — Spatial Storytelling Platform
+# GrandTourXR
 
 ## 📝 Short Description
-GrandTourXR is a WebXR platform that transforms real-world spaces into shared immersive experiences using Gaussian Splatting, multiplayer tour rooms, and AI-guided storytelling.
+GrandTourXR is a WebXR platform that transforms real-world spaces into shared, interactive immersive experiences using Gaussian Splatting, multiplayer guided tours, and AI-powered storytelling — accessible directly through a browser on PC or VR.
 
----
+## 🌐 Live Demos
+
+### 🔹 Main WebXR Experience (Try It Here)
+Experience GrandTourXR directly in your browser — no installation required.  
+👉 **Live Link:** https://playcanv.as/p/Sr3dQRsJ/
+
+> **🧩 VR Users Important Note:**  
+> If you join using a VR headset (Quest, Pico, or other standalone device),  
+> **please disable Hand Tracking before launching the experience** —  
+> otherwise controllers may not function properly.
+
+> **Recommended:**  
+> Desktop Chrome **or** VR headset browser  
+> Close background apps for best performance
+
+### 🔹 AI-Enhanced Prototype (In Progress)
+We are developing an AI-powered version that enables context-aware narration and Q&A.  
+👉 **AI Demo Link:** https://launch.playcanvas.com/2363416?debug=true
+(Will be integrated into the main platform once stable.)
+
+## 👨‍🏫 Target Audience
+
+GrandTourXR is designed for **tour hosts, cultural storytellers, small business owners, educators, and real-estate professionals** who want to present real spaces remotely in a way that feels **immersive, social, and guided**.
 
 ## 🚀 Features
 
-### 1. Photorealistic 3D Spaces (Gaussian Splatting)
-- Automatic reconstruction into lightweight, high-fidelity splats  
-- 6DoF exploration in browser or VR  
-- Smooth host-controlled scene transitions  
+### 1️⃣ Photorealistic 3D Spaces (Gaussian Splatting)
+- Automatic lightweight reconstruction from real-world captures  
+- Fully immersive **6DoF** exploration on web or VR  
 
-### 2. Multiplayer “Tour Rooms”
-- Up to 20 users via a simple browser link  
-- Real-time spatial voice chat (Photon)  
-- Hierarchical roles:  
-  - **Guide:** full avatar (head/hand tracking)  
-  - **Participants:** abstract markers (low visual noise)  
-- Synchronized navigation  
-- Guide pointer + annotation tools  
+### 2️⃣ Cross-Platform WebXR Platform
+- Runs directly in browser across **PC, VR headsets, and mobile devices**  
+- No installation or app store requirements  
 
-### 3. AI Companion (One-on-One Mode)
-- AI guide follows user movement  
-- Answers context-aware questions  
-- Ideal for tourism, education, real estate, and 24/7 tours  
+### 3️⃣ Multiplayer “Tour Rooms”
+- Up to **20 users** join via browser link  
+- Real-time **spatial voice chat**  
+- Role-based interaction: **host leads, participants follow**  
+- Shared pointer, **synchronized navigation**, and annotation tools  
 
-### 4. 2D → 3D “Holographic Memories”
-- Upload photos → get generated pseudo-3D scenes  
-- Low-barrier content creation for cultural orgs and small businesses  
+### 4️⃣ AI-Powered Companion Mode & Holographic Memories
+- Autonomous AI companion when no human host is available  
+- **Context-aware narration and Q&A**
+- **Photo-to-pseudo-3D storytelling** for personal or cultural memories  
+- Easy content creation for **education, tourism, heritage, and small businesses**
 
----
+## 💡 Inspiration
 
-## 🌍 Inspiration
-Virtual travel often feels lonely and inaccessible, while cultural institutions struggle with complex digitization pipelines. GrandTourXR aims to democratize immersive spatial storytelling and enable shared experiences inside real 3D places—guided by humans or AI.
+This project originated from our **AWE Nexus stage-selected prototype**, where we experimented with **Gaussian Splatting** captured via mobile phones and allowed participants to join **only through VR headsets**. During that period, Zihao hosted **three live virtual tours of New York** using **360° images**, attracting **600+ international participants each session**, with engagement lasting **over 2.5 hours** each time.
 
----
+These sessions revealed four critical insights:
 
-## 💡 What It Does
-GrandTourXR combines:
+1. **Social presence and human storytelling** matter far more than just visuals  
+2. **Shift from 360 still-images → fully explorable Gaussian Splatting environments**  
+3. **Move from VR-only → frictionless WebXR cross-platform access**  
+4. **Design for high-engagement social interaction**, not passive viewing  
 
-- **Gaussian Splatting** for photorealistic digital twins  
-- **WebXR multiplayer** for social exploration  
-- **AI companions** for narrative guidance  
-- **Creator tools** for easy content generation  
-
-Think of it as:
-
-> **“Airbnb Meets Zoom Meets AI Tour Guide — inside real 3D spaces.”**
-
-Users can:
-1. Walk through a neighborhood with a live guide  
-2. Revisit a childhood street reconstructed in 3D splats  
-3. Explore heritage sites with an AI historian  
-4. Teach architecture inside a scanned building  
-
-All from a browser link.
-
----
-
-## 🛠️ How We Built It
-
-### Multiplayer Layer (Photon)
-- Photon Pun / Fusion  
-- Up to 20 users  
-- Spatial audio + host-priority logic  
-- Synced avatars + abstract participant markers  
-
-### WebXR Controls
-- VR + PC hybrid input  
-- Gravity-enabled PC locomotion  
-- Shared guide pointer  
-- Minimal avatar rig (head + hands)  
-
-### Gaussian Splatting Engine
-- WebXR-splat loading pipeline  
-- LOD optimizations for fast streaming  
-- Scene boundaries  
-- Host-driven scene switching  
-
-### AI Layer
-- OpenAI-powered guide  
-- Parses metadata + user questions  
-- Vision-powered gaze → commentary mapping  
-
-### Frontend / Backend
-- WebXR with Three.js + React  
-- Firebase + Node  
-- Hosted on Vercel + Cloud Storage  
-
----
-
-## 🏆 Accomplishments
-- Combined **Gaussian Splatting + Multiplayer WebXR** in-browser  
-- Built a coordinated, guided tour system  
-- Designed asymmetric roles to maintain clarity  
-- Implemented AI follow-along narration  
-- Achieved cross-device support (PC, VR headsets, browsers)  
-
----
-
-## ⚙️ Challenges We Overcame
-Network sync was tough—keeping state consistent across all players needed custom interpolation. Hand tracking issues during overlapping interactions were solved with a grab prediction system that interprets user intent.
-
----
-
-## 📚 Lessons Learned
-Early playtesting is essential. Mechanics that sounded good on paper didn’t feel comfortable in VR. Prioritizing comfort and accessibility made the experience significantly better.
-
----
-
-## 🔮 What We’d Do Differently
-We’d build a modular layout system earlier to support custom environments. More time would also go into audio design—sound cues are crucial in VR but were under-prioritized.
-
----
+This became the foundation for the new evolution of **GrandTourXR** — an accessible, social, AI-enhanced platform for immersive cultural exploration.
