@@ -1,13 +1,13 @@
 # GrandTourXR
 
 ## 📝 Short Description
-GrandTourXR is a WebXR platform that transforms real-world spaces into shared, interactive immersive experiences using Gaussian Splatting, multiplayer guided tours, and AI-powered storytelling — accessible directly through a browser on PC or VR.
+Grand Tour XR is a WebXR platform that transforms real-world locations into shared immersive tours through Gaussian Splatting, multiplayer WebXR, and AI-powered storytelling.
 
 ## 🌐 Live Demos
 
 ### 🔹 Main WebXR Experience (Try It Here)
 Experience GrandTourXR directly in your browser — no installation required.  
-👉 **Live Link:** https://playcanv.as/p/Sr3dQRsJ/
+👉 **Live Link:** https://playcanv.as/b/dc88c705
 
 > **🧩 VR Users Important Note:**  
 > If you join using a VR headset (Quest, Pico, or other standalone device),  
@@ -17,11 +17,6 @@ Experience GrandTourXR directly in your browser — no installation required.
 > **Recommended:**  
 > Desktop Chrome **or** VR headset browser  
 > Close background apps for best performance
-
-### 🔹 AI-Enhanced Prototype (In Progress)
-We are developing an AI-powered version that enables context-aware narration and Q&A.  
-👉 **AI Demo Link:** https://launch.playcanvas.com/2363416?debug=true
-(Will be integrated into the main platform once stable.)
 
 ## 👨‍🏫 Target Audience
 
